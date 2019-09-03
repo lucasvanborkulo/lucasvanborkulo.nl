@@ -1,14 +1,20 @@
+/*
+ * General Settings
+ */
+
 * {
     margin: 0;
     overflow: hidden;
-}
-
-span, a {
     font-family: Courier New;
 }
 
+
 body {
     background-color: #000000;
+}
+
+textarea, select, input, button {
+    outline: none;
 }
 
 /*
@@ -23,6 +29,7 @@ body {
 }
 
 #navbar .entry {
+    float: left;
     align-items: center;
     display: inline-flex;
     transition-duration: 300ms;
@@ -74,7 +81,54 @@ body {
 }
 
 /*
- * Animation
+ * Content
+ */
+
+#content {
+    background-color: #ffffff;
+    width: 50%;
+    height: 75%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+#content #form {
+    padding: 5%;
+}
+
+#content #form textarea, #content #form input[type="email"] {
+    margin-top: 2.5%;
+    background-color: #faff00;
+    font-size: 150%;
+    border: #000000 1px solid;
+    width: 50%;
+}
+
+#content #form textarea {
+    height: 50%;
+    resize: none;
+}
+
+#content #form input[type="submit"], #content #form input[type="button"] {
+    margin-top: 5%;
+    border: #000000 1px solid;
+    background-color: #faff00;
+    font-size: 200%;
+    padding: 1%;
+}
+
+#content #form input[type="submit"]:hover, #content #form input[type="button"]:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+/*
+ * Animations
  */
 
 @keyframes typing {

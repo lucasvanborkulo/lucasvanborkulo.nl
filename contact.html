@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Lucas van Borkulo</title>
+        <link rel="stylesheet" href="resources/css/styles.css">
+    </head>
+    <body>
+        <div id="navbar">
+            <div class="entry"><a href="index.html" class="text"><b>1. </b>Home</a></div>
+            <div class="entry"><a href="portfolio.html" class="text"><b>2. </b>Portfolio</a></div>
+            <div class="entry"><a href="about.html" class="text"><b>2. </b>About Me</a></div>
+            <div class="entry active"><a href="contact.html" class="text"><b>3. </b>Contact</a></div>
+        </div>
+
+        <div id="content">
+            <form id="form" action="./classes/router.php" method="post">
+                <input name="email" type="email" placeholder="john@example.com" autocomplete="off"><br>
+                <textarea name="message" type="text" rows="5"wrap="soft" placeholder="Enter your message here" autocomplete="off"></textarea><br>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+
+
+        <!-- Scripts -->
+        <script src="./resources/js/effects.js"></script>
+    </body>
+</html>
